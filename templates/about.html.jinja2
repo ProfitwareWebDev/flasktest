@@ -1,0 +1,17 @@
+{% extends "base.html.jinja2" %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+     <h1>About this application</h1>
+
+
+<form method="POST">
+  <input type="hidden" name="counter" value="{{ counter }}">
+  <div class="form-group">
+    <label>Submit pressed <span class="counter">{{ counter }}</span> time(s).</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit (which was pressed <span class="counter">{{ counter }}</span>)</button>
+</form>
+
+{% endblock %}
